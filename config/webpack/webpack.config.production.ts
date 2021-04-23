@@ -38,7 +38,7 @@ export default buildWebpackConfig('production', {
       theme_color: '#317EFB',
     }),
     new SubresourceIntegrityPlugin({
-      hashFuncNames: ['sha256'],
+      hashFuncNames: ['sha256', 'sha384'],
     }),
   ],
 });

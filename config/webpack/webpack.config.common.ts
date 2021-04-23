@@ -126,11 +126,6 @@ export function buildWebpackConfig(mode: Mode, overrides: WebpackConfiguration):
       new ForkTsCheckerWebpackPlugin({
         async: isDevelopment,
 
-        typescript: {
-          // strange "Maximum call stack size exceeded" error currently.
-          // TODO: Investigate and reactivate
-          enabled: false,
-        },
         eslint: {
           enabled: true,
           files: ['./src/**/*.{ts,tsx}'],

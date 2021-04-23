@@ -15,6 +15,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "moduleResolution": "node",
     "baseUrl": "./",
+    "outDir": "./dist",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

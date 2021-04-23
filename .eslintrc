@@ -27,6 +27,7 @@
   },
   "rules": {
     "class-methods-use-this": "off",
+    "id-length": ["error", { "exceptions": ["x", "y", "i"] }],
     "sort-imports": "off",
     "import/order": "off",
     "import/no-unresolved": "off",
