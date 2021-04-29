@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node --project tsconfig.build.json node_modules/.bin/webpack serve --config config/webpack/webpack.config.development.ts",
-    "build": "NODE_ENV=production ts-node --project tsconfig.build.json node_modules/.bin/webpack build --config config/webpack/webpack.config.production.ts",
+    "start": "ts-node --project tsconfig.build.json node_modules/webpack/bin/webpack.js serve --config config/webpack/webpack.config.development.ts",
+    "build": "cross-env NODE_ENV=production ts-node --project tsconfig.build.json node_modules/webpack/bin/webpack.js build --config config/webpack/webpack.config.production.ts",
     "serve": "ws -d dist --spa index.html --compress --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
